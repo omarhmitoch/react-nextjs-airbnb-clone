@@ -87,6 +87,8 @@ function Header({ inputPlaceholder }) {
                         onChange={handleSelect}
                         rangeColors={["#fd5b61"]}
                         className="flex flex-col-reverse md:flex-row z-50"
+                        staticRanges={[]}
+                        inputRanges={[]}
                     />
                     <div className="flex items-center border-b mb-4 px-2 pb-2">
                         <h2 className="text-2xl flex-grow font-semibold">Number of Guests</h2>
