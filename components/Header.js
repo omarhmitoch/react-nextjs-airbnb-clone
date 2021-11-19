@@ -91,7 +91,7 @@ function Header({ inputPlaceholder }) {
                         inputRanges={[]}
                     />
                     <div className="flex items-center border-b mb-4 px-2 pb-2">
-                        <h2 className="text-2xl flex-grow font-semibold">Number of Guests</h2>
+                        <h2 className="text-xl flex-grow font-semibold">Number of Guests</h2>
                         <UsersIcon className="h-5" />
                         <input type="number" className="w-12 pl-2 text-lg outline-none text-red-400"
                             value={numberOfGuests} onChange={(e) => setNumberOfGuests(e.target.value)}
