@@ -86,7 +86,7 @@ function Header({ inputPlaceholder }) {
                         minDate={new Date()}
                         onChange={handleSelect}
                         rangeColors={["#fd5b61"]}
-                        className="flex flex-col-reverse md:flex-row z-50"
+                        className="z-50"
                         staticRanges={[]}
                         inputRanges={[]}
                     />
