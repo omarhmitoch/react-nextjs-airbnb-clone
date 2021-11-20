@@ -1,6 +1,7 @@
 import { useRouter } from "next/dist/client/router";
 import { format } from "date-fns";
 import InfoCard from "../components/InfoCard";
+import Map from "../components/Map";
 const { default: Header } = require("../components/Header");
 const { default: Footer } = require("../components/Footer");
 
@@ -34,6 +35,10 @@ function Search({ searchResults }) {
                             <InfoCard img={img} location={location} title={title} description={description} star={star} price={price} total={total} key={generateKey(title)} />
                         ))}
                     </div>
+                </section>
+
+                <section className="hidden lg:inline-flex min-w-[600px]">
+                    <Map searchResults={searchResults} />
                 </section>
 
             </main>
