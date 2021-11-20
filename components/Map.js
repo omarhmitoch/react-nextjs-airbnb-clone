@@ -20,11 +20,10 @@ function Map({ searchResults }) {
         longitude: center.longitude,
         zoom: 8
     });
-
     return (
         <ReactMapGL
             mapStyle="mapbox://styles/omarhm/ckw7m4yvc0zs115qnerbnjrce"
-            mapboxApiAccessToken={process.env.mapbox_key}
+            mapboxApiAccessToken={process.env.NEXT_PUBLIC_MAPBOX_KEY}
             {...viewport}
             onViewportChange={nextViewport => setViewport(nextViewport)}>
             {searchResults.map(res => (
